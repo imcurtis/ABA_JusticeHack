@@ -49,7 +49,7 @@
 				</div>
 				
 			</div>
-			<p class="lead">This is a test page for</p>
+			<p class="lead" id="cameraStatus">The Camera is off</p>
 		</div>
 			
 		
@@ -84,7 +84,8 @@
 			myShakeEvent.start();
 			window.addEventListener('shake', shakeEventDidOccur, false);
 			function shakeEventDidOccur () {
-					alert('YEAH, you shake!');
+					document.getElementById("cameraStatus").innerHTML="The Camera is ON!";
+					
 			}
 		</script>
   </body>
