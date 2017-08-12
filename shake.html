@@ -77,6 +77,7 @@
     <script src="http://www.gianpa.com/shake/js/jquery-1.11.3.min.js"></script>
     <script src="http://www.gianpa.com/shake/js/bootstrap.min.js"></script>
 		<script>
+		
 			var myShakeEvent = new Shake({
 					threshold: 15,
 					timeout: 1000
@@ -85,6 +86,7 @@
 			window.addEventListener('shake', shakeEventDidOccur, false);
 			function shakeEventDidOccur () {
 					document.getElementById("cameraStatus").innerHTML="The Camera is ON!";
+					document.body.style.backgroundColor = "red";
 					
 			}
 		</script>
